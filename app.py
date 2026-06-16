@@ -29,7 +29,7 @@ def submit():
 def send_email(subject, body):
     sender_email = os.getenv("EMAIL_USER")
     receiver_email = "donsavio1one@gmail.com"
-    app_password = "ucio tsex zsht sgiu"
+    app_password = os.getenv("EMAIL_PASSWORD")
     msg = EmailMessage()
     msg.set_content(body)
     msg['Subject'] = subject
