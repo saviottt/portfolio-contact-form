@@ -36,7 +36,7 @@ def send_email(subject, body):
     msg['From'] = sender_email
     msg['To'] = receiver_email
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as smtp:
         smtp.login(sender_email, app_password)
         smtp.send_message(msg)
 
