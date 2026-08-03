@@ -43,7 +43,7 @@ def submit():
 def send_email(subject, body):
     sender_email = os.getenv("EMAIL_USER")
     receiver_email = "donsavio1one@gmail.com"
-    app_password = os.getenv("EMAIL_PASSWORD")
+    app_password = os.getenv("xjxl fuva jmpz exch")
 
     if not sender_email or not app_password:
         raise ValueError("Email credentials are not set in environment variables.")
